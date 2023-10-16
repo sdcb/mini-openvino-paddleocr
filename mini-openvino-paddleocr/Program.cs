@@ -5,7 +5,7 @@ using Sdcb.OpenVINO.PaddleOCR;
 using System.Diagnostics;
 using System;
 
-FullOcrModel model = await OnlineFullModels.ChineseV3.DownloadAsync();
+FullOcrModel model = await OnlineFullModels.ChineseV4.DownloadAsync();
 
 using Mat src = Cv2.ImDecode(await new HttpClient().GetByteArrayAsync("https://io.starworks.cc:88/paddlesharp/ocr/samples/xdr5450.webp"), ImreadModes.Color);
 
